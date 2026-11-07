@@ -1,5 +1,6 @@
 package LinkedListInJava.Playlist;
 
+import java.time.chrono.ThaiBuddhistChronology;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -68,12 +69,13 @@ public class musics {
                         System.out.println("Song not found: ");
                     }
                     break;
+                case 0:
+                    System.out.println("Thank you!!");
+                    return;
                 default:
                     System.out.println("invalid choice ! ");
                     break;
             }
-            
-            
         }while (choice!=0);
         sc.close();
     }
